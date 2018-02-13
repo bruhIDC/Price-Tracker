@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83A59AE2203359D60007840D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE1203359D60007840D /* AppDelegate.swift */; };
+		83A59AE4203359D60007840D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE3203359D60007840D /* ViewController.swift */; };
+		83A59AE7203359D60007840D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE5203359D60007840D /* Main.storyboard */; };
+		83A59AE9203359D60007840D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE8203359D60007840D /* Assets.xcassets */; };
+		83A59AEC203359D60007840D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AEA203359D60007840D /* LaunchScreen.storyboard */; };
+		83A59AF7203359D60007840D /* Price_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AF6203359D60007840D /* Price_TrackerTests.swift */; };
+		83A59B02203359D60007840D /* Price_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59B01203359D60007840D /* Price_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83A59AF3203359D60007840D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A59AD6203359D60007840D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A59ADD203359D60007840D;
+			remoteInfo = "Price Tracker";
+		};
+		83A59AFE203359D60007840D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A59AD6203359D60007840D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A59ADD203359D60007840D;
+			remoteInfo = "Price Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83A59ADE203359D60007840D /* Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A59AE1203359D60007840D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83A59AE3203359D60007840D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83A59AE6203359D60007840D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83A59AE8203359D60007840D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83A59AEB203359D60007840D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83A59AED203359D60007840D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A59AF2203359D60007840D /* Price TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Price TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A59AF6203359D60007840D /* Price_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price_TrackerTests.swift; sourceTree = "<group>"; };
+		83A59AF8203359D60007840D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A59AFD203359D60007840D /* Price TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Price TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A59B01203359D60007840D /* Price_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price_TrackerUITests.swift; sourceTree = "<group>"; };
+		83A59B03203359D60007840D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A59ADB203359D60007840D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AEF203359D60007840D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AFA203359D60007840D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83A59AD5203359D60007840D = {
+			isa = PBXGroup;
+			children = (
+				83A59AE0203359D60007840D /* Price Tracker */,
+				83A59AF5203359D60007840D /* Price TrackerTests */,
+				83A59B00203359D60007840D /* Price TrackerUITests */,
+				83A59ADF203359D60007840D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83A59ADF203359D60007840D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A59ADE203359D60007840D /* Price Tracker.app */,
+				83A59AF2203359D60007840D /* Price TrackerTests.xctest */,
+				83A59AFD203359D60007840D /* Price TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83A59AE0203359D60007840D /* Price Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				83A59AE1203359D60007840D /* AppDelegate.swift */,
+				83A59AE3203359D60007840D /* ViewController.swift */,
+				83A59AE5203359D60007840D /* Main.storyboard */,
+				83A59AE8203359D60007840D /* Assets.xcassets */,
+				83A59AEA203359D60007840D /* LaunchScreen.storyboard */,
+				83A59AED203359D60007840D /* Info.plist */,
+			);
+			path = "Price Tracker";
+			sourceTree = "<group>";
+		};
+		83A59AF5203359D60007840D /* Price TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				83A59AF6203359D60007840D /* Price_TrackerTests.swift */,
+				83A59AF8203359D60007840D /* Info.plist */,
+			);
+			path = "Price TrackerTests";
+			sourceTree = "<group>";
+		};
+		83A59B00203359D60007840D /* Price TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83A59B01203359D60007840D /* Price_TrackerUITests.swift */,
+				83A59B03203359D60007840D /* Info.plist */,
+			);
+			path = "Price TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83A59ADD203359D60007840D /* Price Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A59B06203359D60007840D /* Build configuration list for PBXNativeTarget "Price Tracker" */;
+			buildPhases = (
+				83A59ADA203359D60007840D /* Sources */,
+				83A59ADB203359D60007840D /* Frameworks */,
+				83A59ADC203359D60007840D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Price Tracker";
+			productName = "Price Tracker";
+			productReference = 83A59ADE203359D60007840D /* Price Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83A59AF1203359D60007840D /* Price TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A59B09203359D60007840D /* Build configuration list for PBXNativeTarget "Price TrackerTests" */;
+			buildPhases = (
+				83A59AEE203359D60007840D /* Sources */,
+				83A59AEF203359D60007840D /* Frameworks */,
+				83A59AF0203359D60007840D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A59AF4203359D60007840D /* PBXTargetDependency */,
+			);
+			name = "Price TrackerTests";
+			productName = "Price TrackerTests";
+			productReference = 83A59AF2203359D60007840D /* Price TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83A59AFC203359D60007840D /* Price TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A59B0C203359D60007840D /* Build configuration list for PBXNativeTarget "Price TrackerUITests" */;
+			buildPhases = (
+				83A59AF9203359D60007840D /* Sources */,
+				83A59AFA203359D60007840D /* Frameworks */,
+				83A59AFB203359D60007840D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A59AFF203359D60007840D /* PBXTargetDependency */,
+			);
+			name = "Price TrackerUITests";
+			productName = "Price TrackerUITests";
+			productReference = 83A59AFD203359D60007840D /* Price TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A59AD6203359D60007840D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = bruhIDC;
+				TargetAttributes = {
+					83A59ADD203359D60007840D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					83A59AF1203359D60007840D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83A59ADD203359D60007840D;
+					};
+					83A59AFC203359D60007840D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83A59ADD203359D60007840D;
+					};
+				};
+			};
+			buildConfigurationList = 83A59AD9203359D60007840D /* Build configuration list for PBXProject "Price Tracker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83A59AD5203359D60007840D;
+			productRefGroup = 83A59ADF203359D60007840D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83A59ADD203359D60007840D /* Price Tracker */,
+				83A59AF1203359D60007840D /* Price TrackerTests */,
+				83A59AFC203359D60007840D /* Price TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83A59ADC203359D60007840D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A59AEC203359D60007840D /* LaunchScreen.storyboard in Resources */,
+				83A59AE9203359D60007840D /* Assets.xcassets in Resources */,
+				83A59AE7203359D60007840D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AF0203359D60007840D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AFB203359D60007840D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83A59ADA203359D60007840D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A59AE4203359D60007840D /* ViewController.swift in Sources */,
+				83A59AE2203359D60007840D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AEE203359D60007840D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A59AF7203359D60007840D /* Price_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A59AF9203359D60007840D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A59B02203359D60007840D /* Price_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83A59AF4203359D60007840D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A59ADD203359D60007840D /* Price Tracker */;
+			targetProxy = 83A59AF3203359D60007840D /* PBXContainerItemProxy */;
+		};
+		83A59AFF203359D60007840D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A59ADD203359D60007840D /* Price Tracker */;
+			targetProxy = 83A59AFE203359D60007840D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83A59AE5203359D60007840D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A59AE6203359D60007840D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83A59AEA203359D60007840D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A59AEB203359D60007840D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83A59B04203359D60007840D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83A59B05203359D60007840D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83A59B07203359D60007840D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83A59B08203359D60007840D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83A59B0A203359D60007840D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Price Tracker.app/Price Tracker";
+			};
+			name = Debug;
+		};
+		83A59B0B203359D60007840D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Price Tracker.app/Price Tracker";
+			};
+			name = Release;
+		};
+		83A59B0D203359D60007840D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Price Tracker";
+			};
+			name = Debug;
+		};
+		83A59B0E203359D60007840D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Price TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bruhIDC.Price-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Price Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A59AD9203359D60007840D /* Build configuration list for PBXProject "Price Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A59B04203359D60007840D /* Debug */,
+				83A59B05203359D60007840D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A59B06203359D60007840D /* Build configuration list for PBXNativeTarget "Price Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A59B07203359D60007840D /* Debug */,
+				83A59B08203359D60007840D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A59B09203359D60007840D /* Build configuration list for PBXNativeTarget "Price TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A59B0A203359D60007840D /* Debug */,
+				83A59B0B203359D60007840D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A59B0C203359D60007840D /* Build configuration list for PBXNativeTarget "Price TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A59B0D203359D60007840D /* Debug */,
+				83A59B0E203359D60007840D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83A59AD6203359D60007840D /* Project object */;
+}
