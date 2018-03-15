@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		83A59AE2203359D60007840D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE1203359D60007840D /* AppDelegate.swift */; };
-		83A59AE4203359D60007840D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE3203359D60007840D /* ViewController.swift */; };
 		83A59AE7203359D60007840D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE5203359D60007840D /* Main.storyboard */; };
 		83A59AE9203359D60007840D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE8203359D60007840D /* Assets.xcassets */; };
 		83A59AEC203359D60007840D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AEA203359D60007840D /* LaunchScreen.storyboard */; };
 		83A59AF7203359D60007840D /* Price_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AF6203359D60007840D /* Price_TrackerTests.swift */; };
 		83A59B02203359D60007840D /* Price_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59B01203359D60007840D /* Price_TrackerUITests.swift */; };
+		83BD11DA205B25BC00120051 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11D9205B25BC00120051 /* homeViewController.swift */; };
+		83BD11DC205B25C900120051 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11DB205B25C900120051 /* productDetailViewController.swift */; };
+		83BD11DE205B25D400120051 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11DD205B25D400120051 /* searchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		83A59ADE203359D60007840D /* Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A59AE1203359D60007840D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83A59AE3203359D60007840D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83A59AE6203359D60007840D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83A59AE8203359D60007840D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A59AEB203359D60007840D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		83A59AFD203359D60007840D /* Price TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Price TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A59B01203359D60007840D /* Price_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price_TrackerUITests.swift; sourceTree = "<group>"; };
 		83A59B03203359D60007840D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BD11D9205B25BC00120051 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		83BD11DB205B25C900120051 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
+		83BD11DD205B25D400120051 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		83A59AE0203359D60007840D /* Price Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				83BD11D8205B258100120051 /* View Controllers */,
 				83A59AE1203359D60007840D /* AppDelegate.swift */,
-				83A59AE3203359D60007840D /* ViewController.swift */,
 				83A59AE5203359D60007840D /* Main.storyboard */,
 				83A59AE8203359D60007840D /* Assets.xcassets */,
 				83A59AEA203359D60007840D /* LaunchScreen.storyboard */,
@@ -123,6 +127,16 @@
 				83A59B03203359D60007840D /* Info.plist */,
 			);
 			path = "Price TrackerUITests";
+			sourceTree = "<group>";
+		};
+		83BD11D8205B258100120051 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83BD11D9205B25BC00120051 /* homeViewController.swift */,
+				83BD11DB205B25C900120051 /* productDetailViewController.swift */,
+				83BD11DD205B25D400120051 /* searchViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A59AE4203359D60007840D /* ViewController.swift in Sources */,
 				83A59AE2203359D60007840D /* AppDelegate.swift in Sources */,
+				83BD11DA205B25BC00120051 /* homeViewController.swift in Sources */,
+				83BD11DE205B25D400120051 /* searchViewController.swift in Sources */,
+				83BD11DC205B25C900120051 /* productDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
