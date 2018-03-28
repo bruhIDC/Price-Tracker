@@ -203,9 +203,6 @@
                                 <rect key="frame" x="160" y="626" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onSignUp:" destination="ZBu-j5-BIG" eventType="touchUpInside" id="par-t6-vbu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVz-oC-zLr">
                                 <rect key="frame" x="166" y="355" width="46" height="30"/>

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class loginViewController: UIViewController {
     
@@ -29,7 +30,7 @@ class loginViewController: UIViewController {
         let password = passwordField.text!
         if ((usernameField.text?.isEmpty)! || (passwordField.text?.isEmpty)!){
             present(emptyAlertController, animated: true) {
-                // optional code for what happens after the alert controller has finished presenting
+                // optional code for what happens after the alert controller has finis ma
             }
         }
         
@@ -49,12 +50,10 @@ class loginViewController: UIViewController {
     }
     
     let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
-        // handle response here.
+            // handle response here.
     }
     
-    @IBAction func onSignUp(_ sender: Any) {
-    }
-    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
