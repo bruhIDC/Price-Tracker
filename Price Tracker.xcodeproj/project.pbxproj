@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4BC60C206BFF88007CD49E /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BC60B206BFF88007CD49E /* itemCell.swift */; };
+		7B4BC60F206C00F3007CD49E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BC60E206C00F3007CD49E /* Product.swift */; };
 		8328BCA5206B26F600B93462 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328BCA4206B26F600B93462 /* loginViewController.swift */; };
 		83670D45206B2A2E00978438 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83670D44206B2A2E00978438 /* GoogleService-Info.plist */; };
 		83A59AE2203359D60007840D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE1203359D60007840D /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 		0834487C90EF8CE4831FBBAE /* Pods-Price Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Price Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Price Tracker/Pods-Price Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 		209AFE1F1F77C1917A2A7116 /* Pods_Price_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Price_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792657A10114B1B1704B1962 /* Pods-Price TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Price TrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Price TrackerUITests/Pods-Price TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B4BC60B206BFF88007CD49E /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		7B4BC60E206C00F3007CD49E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		7DA54F500036ED395B9D7DC8 /* Pods_Price_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Price_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8328BCA4206B26F600B93462 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		83670D44206B2A2E00978438 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -120,6 +124,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7B4BC60A206BFF45007CD49E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B4BC60B206BFF88007CD49E /* itemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7B4BC60D206C00C1007CD49E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B4BC60E206C00F3007CD49E /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		83A59AD5203359D60007840D = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +165,8 @@
 		83A59AE0203359D60007840D /* Price Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				7B4BC60D206C00C1007CD49E /* Models */,
+				7B4BC60A206BFF45007CD49E /* Cells */,
 				83BD11D8205B258100120051 /* View Controllers */,
 				83A59AE1203359D60007840D /* AppDelegate.swift */,
 				83A59AE5203359D60007840D /* Main.storyboard */,
@@ -501,7 +523,9 @@
 				83BD11DA205B25BC00120051 /* homeViewController.swift in Sources */,
 				83BD11DE205B25D400120051 /* searchViewController.swift in Sources */,
 				83BD11DC205B25C900120051 /* productDetailViewController.swift in Sources */,
+				7B4BC60C206BFF88007CD49E /* itemCell.swift in Sources */,
 				8328BCA5206B26F600B93462 /* loginViewController.swift in Sources */,
+				7B4BC60F206C00F3007CD49E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

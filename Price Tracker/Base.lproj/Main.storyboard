@@ -73,7 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="204" id="GNO-bf-2cr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="204" id="GNO-bf-2cr" customClass="itemCell" customModule="Price_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GNO-bf-2cr" id="ZyZ-Bb-wov">
@@ -105,6 +105,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="priceLbl" destination="ppg-54-KOW" id="Z3r-zE-sjK"/>
+                                            <outlet property="productImg" destination="4C0-iQ-U7j" id="SwU-gO-lQS"/>
+                                            <outlet property="productLbl" destination="YRb-yd-zpe" id="lpr-je-d2s"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
