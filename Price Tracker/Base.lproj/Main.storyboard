@@ -199,17 +199,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PP-Dn-V7H">
-                                <rect key="frame" x="160" y="626" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVz-oC-zLr">
-                                <rect key="frame" x="166" y="355" width="46" height="30"/>
+                                <rect key="frame" x="117" y="355" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="onLogin:" destination="ZBu-j5-BIG" eventType="touchUpInside" id="3LH-tl-j02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PP-Dn-V7H">
+                                <rect key="frame" x="206" y="360" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignUp:" destination="ZBu-j5-BIG" eventType="touchUpInside" id="GVc-PD-IcJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -219,17 +222,19 @@
                     <connections>
                         <outlet property="passwordField" destination="GKm-xJ-vyA" id="ln9-m5-MU0"/>
                         <outlet property="usernameField" destination="6F7-jB-ayd" id="FMO-Ih-CtS"/>
+                        <segue destination="O0u-yf-DFo" kind="show" identifier="loginSegue" id="9Jb-V6-nGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajm-nc-SRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-924" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-1074" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KEZ-KW-crs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O0u-yf-DFo" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="z3I-su-xO8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="azv-HA-lEt">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

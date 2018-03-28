@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class loginViewController: UIViewController {
+class loginViewController: UIViewController{
     
     let emptyAlertController = UIAlertController(title: "Error", message: "Please fill all fields", preferredStyle: .alert)
     let credentialAlertController = UIAlertController(title: "Error", message: "Incorrect e-mail or password", preferredStyle: .alert)
@@ -39,7 +39,7 @@ class loginViewController: UIViewController {
                 print("successfully signed in")
                 self.usernameField.text = ""
                 self.passwordField.text = ""
-                self.performSegue(withIdentifier: "onSignInSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }else{
                 print("Error: \(error!.localizedDescription)")
                 self.present(self.credentialAlertController, animated: true) {
@@ -48,6 +48,32 @@ class loginViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func onSignUp(_ sender: Any) {
+        let email = usernameField.text!
+        let password = passwordField.text!
+        if ((usernameField.text?.isEmpty)! || (passwordField.text?.isEmpty)!){
+            present(emptyAlertController, animated: true) {
+                // optional code for what happens after the alert controller has finished presenting
+            }
+        }
+        
+        
+        Auth.auth().createUser(withEmail: email, password: password){ user, error in
+            if error == nil && user != nil {
+                print("User created")
+                //let uid = user?.uid
+                self.usernameField.text = ""
+                self.passwordField.text = ""
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else{
+                print("Error: \(error!.localizedDescription)")
+            }
+            
+        }
+    
+    }
+    
     
     let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
             // handle response here.
