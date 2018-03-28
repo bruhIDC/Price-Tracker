@@ -10,8 +10,6 @@ import UIKit
 
 class homeViewController: UIViewController {
     
-    @IBOutlet weak var productImageView: UIImageView!
-    @IBOutlet weak var productNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

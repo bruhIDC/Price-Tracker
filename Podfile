@@ -8,6 +8,9 @@ target 'Price Tracker' do
   # Pods for Price Tracker
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'Price TrackerTests' do
     inherit! :search_paths
