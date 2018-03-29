@@ -5,7 +5,7 @@ app to price track products that the user is actively monitoring
 
 - [ ] User can sign up and sign in to the login screen
 - [ ] User can add products that he or she wants to monitor the prices of
-- [ ] User can see a tableView of products that show current price and a price graph
+- [ ] User can see a tableView of products that show current price
 - [ ] User can tap the product cell for more detail about the product and its price
 - [ ] User can click buy and will be taken to the site that offers the lowest price shown.
 
