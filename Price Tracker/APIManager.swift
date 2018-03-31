@@ -17,15 +17,22 @@ class APIManager{
         session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
     }
     
-    func getItems(searchText: String, completion: @escaping ([Product]?, Error?) -> ()) {
-        let url = URL(string: (baseUrl + searchText))!
+    func getItems(searchQuery: String, completion: @escaping ([Product]?, Error?) -> ()) {
+        let url = URL(string: (baseUrl + searchQuery))!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let task = session.dataTask(with: request) {(data, response, error) in
             if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                let dictionary = dataDictionary["findItemsByKeywordsResponse"]
+                let preProcess = dataDictionary["findItemsByKeywordsResponse"] as! [String: Any]
+                let searched = preProcess["searchResult"] as! [String: Any]
+                let items = searched["item"] as! [[String: Any]]
+                
+                let products = Product.products(dictionaries: items)
+                completion(products, error)
+            } else {
+                completion(nil, error)
             }
-            
         }
+        task.resume()
     }
 }

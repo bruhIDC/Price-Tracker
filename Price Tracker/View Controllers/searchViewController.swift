@@ -8,13 +8,31 @@
 
 import UIKit
 
-class searchViewController: UIViewController {
+class searchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
+    var products: [Product]!
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if products != nil {
+            return products!.count
+        } else {
+            return 0
+        }
+    }
+    
+    table
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -29,4 +29,13 @@ class Product {
         }
         
     }
+    
+    class func products(dictionaries: [[String:Any]]) -> [Product]{
+        var products: [Product] = []
+        for dictionary in dictionaries {
+            let product = Product(dictionary: dictionary)
+            products.append(product)
+        }
+        return products
+    }
 }
