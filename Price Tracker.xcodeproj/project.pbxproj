@@ -12,6 +12,7 @@
 		7B4BC60F206C00F3007CD49E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BC60E206C00F3007CD49E /* Product.swift */; };
 		8328BCA5206B26F600B93462 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328BCA4206B26F600B93462 /* loginViewController.swift */; };
 		8361D838206C54A200EC15AD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361D837206C54A200EC15AD /* APIManager.swift */; };
+		8361D83A206E507C00EC15AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8361D839206E507B00EC15AD /* GoogleService-Info.plist */; };
 		83A59AE2203359D60007840D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A59AE1203359D60007840D /* AppDelegate.swift */; };
 		83A59AE7203359D60007840D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE5203359D60007840D /* Main.storyboard */; };
 		83A59AE9203359D60007840D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A59AE8203359D60007840D /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		7DA54F500036ED395B9D7DC8 /* Pods_Price_TrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Price_TrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8328BCA4206B26F600B93462 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		8361D837206C54A200EC15AD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		8361D839206E507B00EC15AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		83A59ADE203359D60007840D /* Price Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Price Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A59AE1203359D60007840D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A59AE6203359D60007840D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				83A59AEA203359D60007840D /* LaunchScreen.storyboard */,
 				83A59AED203359D60007840D /* Info.plist */,
 				8361D837206C54A200EC15AD /* APIManager.swift */,
+				8361D839206E507B00EC15AD /* GoogleService-Info.plist */,
 			);
 			path = "Price Tracker";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A59AEC203359D60007840D /* LaunchScreen.storyboard in Resources */,
+				8361D83A206E507C00EC15AD /* GoogleService-Info.plist in Resources */,
 				83A59AE9203359D60007840D /* Assets.xcassets in Resources */,
 				83A59AE7203359D60007840D /* Main.storyboard in Resources */,
 			);
@@ -389,6 +393,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Price Tracker/Pods-Price Tracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -402,6 +408,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
