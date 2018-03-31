@@ -15,6 +15,17 @@ class itemCell: UITableViewCell {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var productImg: UIImageView!
     
+    var product: Product!{
+        didSet {
+            productLbl.text = product.productName
+            priceLbl.text = product.price
+            if product.imgStringURL != nil{
+               productImg.af_setImage(withURL: product.imgStringURL!)
+            }
+        }
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
