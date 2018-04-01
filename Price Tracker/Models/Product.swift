@@ -16,24 +16,34 @@ class Product {
     var imgStringURL: URL? //String URL of Image
 
     init(dictionary: [String: Any]) {
-        productName = dictionary["title"] as! String
-        let sellingStats = dictionary["sellingStatus"] as! [String: Any]
-        let curr = sellingStats["currentPrice"] as! [String: Any]
-        price = curr["__value__"] as? String
-        self.id = dictionary["itemId"] as! String
         
-        if let data = dictionary["galleryPlusPictureURL"] as? String {
-            imgStringURL = URL(string: data)!
-        } else {
-            imgStringURL = URL(string: dictionary["galleryURL"] as! String)!
+        let buff = dictionary["title"] as! [String]
+        productName = buff[0]
+        
+        let sellingStats = (dictionary["sellingStatus"] as? [Any])?[0] as! [String: Any]
+        let curr = (sellingStats["currentPrice"] as! [Any])[0] as! [String: Any]
+        price = curr["__value__"] as? String
+        let buff1 = dictionary["itemId"] as! [String]
+        self.id = buff1[0]
+        
+        if let data = dictionary["galleryPlusPictureURL"] as? [String] {
+            let buff2 = data[0]
+            let res = buff2.replacingOccurrences(of: "http", with: "https")
+            imgStringURL = URL(string: res)!
+        } else if let data = dictionary["galleryURL"] as? [String]{
+            let buff3 = data[0]
+            let res = buff3.replacingOccurrences(of: "http", with: "https")
+            imgStringURL = URL(string: res)!
         }
         
     }
     
-    class func products(dictionaries: [[String:Any]]) -> [Product]{
+    class func products(dictionaries: [Any]) -> [Product]{
         var products: [Product] = []
-        for dictionary in dictionaries {
-            let product = Product(dictionary: dictionary)
+        let buff = dictionaries[0] as! [Any]
+        for dictionary in buff {
+            let dict = dictionary as! [String: Any]
+            let product = Product(dictionary: dict)
             products.append(product)
         }
         return products

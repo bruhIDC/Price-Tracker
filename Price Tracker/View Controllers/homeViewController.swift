@@ -10,10 +10,6 @@ import UIKit
 import AlamofireImage
 
 class homeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-   
-    @IBAction func onSearch(_ sender: Any) {
-        performSegue(withIdentifier: "searchSegue", sender: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

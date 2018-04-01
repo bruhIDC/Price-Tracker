@@ -9,6 +9,18 @@
 import UIKit
 
 class searchCell: UITableViewCell {
+    
+    @IBOutlet weak var productImg: UIImageView!
+    @IBOutlet weak var productLbl: UILabel!
+    
+    var product: Product! {
+        didSet {
+            if let data = product.imgStringURL {
+                productImg.af_setImage(withURL: data)
+            }
+            productLbl.text = product.productName
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
