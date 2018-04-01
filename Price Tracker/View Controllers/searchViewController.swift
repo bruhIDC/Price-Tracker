@@ -32,7 +32,11 @@ class searchViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    table
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell", for: indexPath) as! searchCell
+        //cell.movie = movies[indexPath.row]
+        return cell
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

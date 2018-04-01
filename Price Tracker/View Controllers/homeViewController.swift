@@ -9,14 +9,28 @@
 import UIKit
 import AlamofireImage
 
-class homeViewController: UIViewController {
-    
+class homeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+   
+    @IBAction func onSearch(_ sender: Any) {
+        performSegue(withIdentifier: "searchSegue", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! itemCell
+        return cell
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
