@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class searchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
@@ -53,6 +54,27 @@ class searchViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let p = products[indexPath.row]
+        /*let prod = [
+            "productName": p.productName,
+            "price": p.price,
+            "id": p.id,
+            "img": p.imgStringURL,
+            "url": p.itemURL
+        
+        ]*/
+        let ref = Database.database().reference()
+        let rref = ref.child("users").child((Auth.auth().currentUser?.uid)!).child("products").child(p.id)
+        rref.setValue(["productName": p.productName,
+                       "price": p.price!,
+                       "img": p.imgStringURL!,
+                       "url": p.itemURL])
+        
+        navigationController?.popViewController(animated: true)
+
     }
 
     override func didReceiveMemoryWarning() {

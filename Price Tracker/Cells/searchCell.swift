@@ -16,7 +16,7 @@ class searchCell: UITableViewCell {
     var product: Product! {
         didSet {
             if let data = product.imgStringURL {
-                productImg.af_setImage(withURL: data)
+                productImg.af_setImage(withURL:URL(string: data)!)
             }
             productLbl.text = product.productName
         }

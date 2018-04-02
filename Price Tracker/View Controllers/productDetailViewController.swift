@@ -16,12 +16,12 @@ class productDetailViewController: UIViewController {
         didSet {
             price.text = product.price
             if product.imgStringURL != nil{
-                productImg.af_setImage(withURL: product.imgStringURL!)
+                productImg.af_setImage(withURL: URL(string: product.imgStringURL!)!)
             }
         }
     }
     @IBAction func openURL(_ sender: Any) {
-        UIApplication.shared.open(product.itemURL!, options: [:])
+        UIApplication.shared.open(URL(string: product.itemURL!)!, options: [:])
     }
     
     override func viewDidLoad() {

@@ -13,8 +13,8 @@ class Product {
     var productName: String //Product Name
     var price: String? //Product Price
     var id: String //Product ID
-    var imgStringURL: URL? //String URL of Image
-    var itemURL: URL? //URL to item
+    var imgStringURL: String? //String URL of Image
+    var itemURL: String? //URL to item
 
     init(dictionary: [String: Any]) {
         
@@ -33,17 +33,17 @@ class Product {
         
         //Item URL
         let buff2 = (dictionary["viewItemURL"] as! [Any])[0] as! String
-        itemURL = URL(string: buff2)!
+        itemURL = buff2//URL(string: buff2)!
         
         //Gallery Pictures
         if let data = dictionary["galleryPlusPictureURL"] as? [String] {
             let buff2 = data[0]
             let res = buff2.replacingOccurrences(of: "http", with: "https")
-            imgStringURL = URL(string: res)!
+            imgStringURL = res//URL(string: res)!
         } else if let data = dictionary["galleryURL"] as? [String]{
             let buff3 = data[0]
             let res = buff3.replacingOccurrences(of: "http", with: "https")
-            imgStringURL = URL(string: res)!
+            imgStringURL = res//URL(string: res)!
         }
         
     }
