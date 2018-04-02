@@ -26,6 +26,10 @@ class itemCell: UITableViewCell {
         
     }
     
+    @IBAction func sendToSite(_ sender: Any) {
+        UIApplication.shared.open(product.itemURL!, options: [:])
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

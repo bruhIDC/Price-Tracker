@@ -14,18 +14,28 @@ class Product {
     var price: String? //Product Price
     var id: String //Product ID
     var imgStringURL: URL? //String URL of Image
+    var itemURL: URL? //URL to item
 
     init(dictionary: [String: Any]) {
         
+        //Product Name
         let buff = dictionary["title"] as! [String]
         productName = buff[0]
         
+        //Current Price
         let sellingStats = (dictionary["sellingStatus"] as? [Any])?[0] as! [String: Any]
         let curr = (sellingStats["currentPrice"] as! [Any])[0] as! [String: Any]
         price = curr["__value__"] as? String
+        
+        //Item ID
         let buff1 = dictionary["itemId"] as! [String]
         self.id = buff1[0]
         
+        //Item URL
+        let buff2 = (dictionary["viewItemURL"] as! [Any])[0] as! String
+        itemURL = URL(string: buff2)!
+        
+        //Gallery Pictures
         if let data = dictionary["galleryPlusPictureURL"] as? [String] {
             let buff2 = data[0]
             let res = buff2.replacingOccurrences(of: "http", with: "https")

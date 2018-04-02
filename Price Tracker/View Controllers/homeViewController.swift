@@ -11,14 +11,26 @@ import AlamofireImage
 
 class homeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var products: [Product]!
+
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        if products != nil {
+            return products!.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,7 +44,16 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            let cell = sender as! UITableViewCell
+            if let indexPath = tableView.indexPath(for: cell) {
+                let product = products[indexPath.row]
+                let pdvc = segue.destination as! productDetailViewController
+                pdvc.product = product
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
