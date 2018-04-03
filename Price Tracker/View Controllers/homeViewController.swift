@@ -30,6 +30,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let ref = Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("products")
         ref.observe(.childAdded){(snapshot: DataSnapshot) in
             if let dict = snapshot.value as? [String: Any]{
+                
                 let imgURL = dict["img"] as! String
                 let price = dict["price"] as! String
                 let productName = dict["productName"] as! String
@@ -39,6 +40,9 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 //print(i.productName)
                 self.tableView.reloadData()
             }
+            /*for i in self.items{
+                print(i.productName)
+            }*/
         }
         
         
@@ -55,6 +59,8 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! itemCell
+        let i = self.items[indexPath.row]
+        cell.item = i
         return cell
     }
     
