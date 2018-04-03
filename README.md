@@ -3,11 +3,11 @@ app to price track products that the user is actively monitoring
 
 ## User Stories
 
-- [ ] User can sign up and sign in to the login screen
-- [ ] User can add products that he or she wants to monitor the prices of
-- [ ] User can see a tableView of products that show current price
-- [ ] User can tap the product cell for more detail about the product and its price
-- [ ] User can click buy and will be taken to the site that offers the lowest price shown.
+- [x] User can sign up and sign in to the login screen
+- [x] User can add products that he or she wants to monitor the prices of
+- [x] User can see a tableView of products that show current price
+- [x] User can tap the product cell for more detail about the product and its price
+- [x] User can click buy and will be taken to the site that offers the lowest price shown.
 
 **Optional**:
 - [ ] Make the UI look nice
@@ -26,7 +26,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 1998 Chris Lin, Farid Ramos
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
