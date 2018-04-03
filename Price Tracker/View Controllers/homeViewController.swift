@@ -20,7 +20,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tableView.rowHeight = 250
+        tableView.rowHeight = 200
         tableView.delegate = self
         tableView.dataSource = self
         loadItem()
@@ -33,7 +33,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if let dict = snapshot.value as? [String: Any]{
                 
                 let imgURL = dict["img"] as! String
-                let price = dict["price"] as! String
+                let price = "$" + (dict["price"] as! String)
                 let productName = dict["productName"] as! String
                 let itemURL = dict["url"] as! String
                 let i = Item(name: productName, price: price, imgURL: imgURL, itemURL: itemURL)
