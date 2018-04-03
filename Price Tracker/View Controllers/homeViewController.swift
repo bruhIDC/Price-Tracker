@@ -8,10 +8,11 @@
 
 import UIKit
 import AlamofireImage
+import Firebase
 
 class homeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var products: [Product]!
+    var items: [Item]! = []
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,13 +22,32 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        loadItem()
         
     }
     
+    func loadItem(){
+        let ref = Database.database().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("products")
+        ref.observe(.childAdded){(snapshot: DataSnapshot) in
+            if let dict = snapshot.value as? [String: Any]{
+                let imgURL = dict["img"] as! String
+                let price = dict["price"] as! String
+                let productName = dict["productName"] as! String
+                let itemURL = dict["url"] as! String
+                let i = Item(name: productName, price: price, imgURL: imgURL, itemURL: itemURL)
+                self.items.append(i)
+                //print(i.productName)
+                self.tableView.reloadData()
+            }
+        }
+        
+        
+    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if products != nil {
-            return products!.count
+        if items != nil {
+            return items.count
         } else {
             return 0
         }
@@ -48,9 +68,9 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if segue.identifier == "detailSegue" {
             let cell = sender as! UITableViewCell
             if let indexPath = tableView.indexPath(for: cell) {
-                let product = products[indexPath.row]
+                let item = items[indexPath.row]
                 let pdvc = segue.destination as! productDetailViewController
-                pdvc.product = product
+                pdvc.product = item
             }
         }
     }

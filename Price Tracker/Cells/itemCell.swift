@@ -15,19 +15,20 @@ class itemCell: UITableViewCell {
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var productImg: UIImageView!
     
-    var product: Product!{
+    var item: Item!{
         didSet {
-            productLbl.text = product.productName
-            priceLbl.text = product.price
-            if product.imgStringURL != nil{
-                productImg.af_setImage(withURL: URL(string: product.imgStringURL!)!)
+            productLbl.text = item.productName
+            print(item.productName)
+            priceLbl.text = item.price
+            if item.imgStringURL != nil{
+                productImg.af_setImage(withURL: URL(string: item.imgStringURL!)!)
             }
         }
         
     }
     
     @IBAction func sendToSite(_ sender: Any) {
-        UIApplication.shared.open(URL(string: product.itemURL!)!, options: [:])
+        UIApplication.shared.open(URL(string: item.itemURL!)!, options: [:])
     }
     
     override func awakeFromNib() {

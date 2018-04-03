@@ -12,7 +12,7 @@ class productDetailViewController: UIViewController {
     @IBOutlet weak var productImg: UIImageView!
     @IBOutlet weak var price: UILabel!
     
-    var product: Product! {
+    var product: Item! {
         didSet {
             price.text = product.price
             if product.imgStringURL != nil{

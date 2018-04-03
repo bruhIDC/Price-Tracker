@@ -22,6 +22,7 @@
 		83BD11DA205B25BC00120051 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11D9205B25BC00120051 /* homeViewController.swift */; };
 		83BD11DC205B25C900120051 /* productDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11DB205B25C900120051 /* productDetailViewController.swift */; };
 		83BD11DE205B25D400120051 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD11DD205B25D400120051 /* searchViewController.swift */; };
+		83EE4222207330D500718A43 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE4221207330D500718A43 /* Item.swift */; };
 		DB88B8472B6F0B210F663149 /* Pods_Price_TrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC16D0BD744DBDAC81076E3 /* Pods_Price_TrackerTests.framework */; };
 		F0847256C456DBC2E8D816EB /* Pods_Price_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209AFE1F1F77C1917A2A7116 /* Pods_Price_Tracker.framework */; };
 		F9A0858719D74DD7B100FC8F /* Pods_Price_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA54F500036ED395B9D7DC8 /* Pods_Price_TrackerUITests.framework */; };
@@ -70,6 +71,7 @@
 		83BD11D9205B25BC00120051 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		83BD11DB205B25C900120051 /* productDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productDetailViewController.swift; sourceTree = "<group>"; };
 		83BD11DD205B25D400120051 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		83EE4221207330D500718A43 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8D96E66EB5915C92D76B8B8C /* Pods-Price TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Price TrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Price TrackerTests/Pods-Price TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
 		A00EC2850C95D57138C0B35A /* Pods-Price TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Price TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Price TrackerTests/Pods-Price TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA4FCA6BF779B4F934C4F1A8 /* Pods-Price TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Price TrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Price TrackerUITests/Pods-Price TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				7B4BC60E206C00F3007CD49E /* Product.swift */,
+				83EE4221207330D500718A43 /* Item.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE4222207330D500718A43 /* Item.swift in Sources */,
 				8361D838206C54A200EC15AD /* APIManager.swift in Sources */,
 				83A59AE2203359D60007840D /* AppDelegate.swift in Sources */,
 				83BD11DA205B25BC00120051 /* homeViewController.swift in Sources */,
