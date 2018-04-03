@@ -82,6 +82,11 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
 
+    @IBAction func onLogout(_ sender: Any) {
+        try! Auth.auth().signOut()
+        print("Signed Out")
+        performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
     /*
     // MARK: - Navigation
 
