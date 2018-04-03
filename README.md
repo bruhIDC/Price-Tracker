@@ -29,7 +29,7 @@ We had issues with the Amazon API so we instead decided to use Ebay's API. Ebay'
 
 ## License
 
-    Copyright 1998 Chris Lin, Farid Ramos
+    Copyright 2018 Chris Lin, Farid Ramos
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
