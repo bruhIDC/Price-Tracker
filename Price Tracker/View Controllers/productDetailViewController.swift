@@ -12,21 +12,17 @@ class productDetailViewController: UIViewController {
     @IBOutlet weak var productImg: UIImageView!
     @IBOutlet weak var price: UILabel!
     
-    var product: Item! {
-        didSet {
-            price.text = product.price
-            if product.imgStringURL != nil{
-                productImg.af_setImage(withURL: URL(string: product.imgStringURL!)!)
-            }
-        }
-    }
+    var product: Item!
     @IBAction func openURL(_ sender: Any) {
         UIApplication.shared.open(URL(string: product.itemURL!)!, options: [:])
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        price.text = product.price
+        if product.imgStringURL != nil{
+            productImg.af_setImage(withURL: URL(string: product.imgStringURL!)!)
+        }
         // Do any additional setup after loading the view.
     }
 

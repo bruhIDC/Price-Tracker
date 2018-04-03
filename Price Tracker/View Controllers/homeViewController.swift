@@ -20,6 +20,7 @@ class homeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.rowHeight = 250
         tableView.delegate = self
         tableView.dataSource = self
         loadItem()

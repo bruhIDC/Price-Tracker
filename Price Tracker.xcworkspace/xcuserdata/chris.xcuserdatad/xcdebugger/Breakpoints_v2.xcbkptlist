@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Price Tracker/View Controllers/homeViewController.swift"
-            timestampString = "544466998.64071"
+            timestampString = "544474362.453281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "loadItem()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,13 +26,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Price Tracker/View Controllers/productDetailViewController.swift"
-            timestampString = "544466998.64081"
+            timestampString = "544474362.453353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "product"
-            landmarkType = "24">
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "productDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Price_Tracker.productDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Price_Tracker.productDetailViewController"
+                  moduleName = "Price Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chris/Desktop/iosProjects/Price-Tracker/Price%20Tracker/View%20Controllers/productDetailViewController.swift"
+                  timestampString = "544474081.4414459"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Price_Tracker.productDetailViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Price_Tracker.productDetailViewController&gt;"
+                  moduleName = "Price Tracker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chris/Desktop/iosProjects/Price-Tracker/Price%20Tracker/View%20Controllers/productDetailViewController.swift"
+                  timestampString = "544474081.443596"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "302">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
