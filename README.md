@@ -11,18 +11,21 @@ app to price track products that the user is actively monitoring
 
 **Optional**:
 - [ ] Make the UI look nice
+- [x] Persisting Login
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/XYxGgdh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+We had issues with the Amazon API so we instead decided to use Ebay's API. Ebay's API's returned data in very weird JSON formats that proved awkward to work with and parse the data from.
 
 ## License
 
