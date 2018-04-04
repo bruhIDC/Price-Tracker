@@ -11,6 +11,7 @@ import UIKit
 class productDetailViewController: UIViewController {
     @IBOutlet weak var productImg: UIImageView!
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var productLabel: UILabel!
     
     var product: Item!
     @IBAction func openURL(_ sender: Any) {
@@ -19,6 +20,7 @@ class productDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        productLabel.text = product.productName
         price.text = product.price
         if product.imgStringURL != nil{
             productImg.af_setImage(withURL: URL(string: product.imgStringURL!)!)
